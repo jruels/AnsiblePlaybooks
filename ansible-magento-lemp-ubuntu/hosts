@@ -1,0 +1,5 @@
+[web]
+ansibleweb1
+
+[db]
+ansibledb1

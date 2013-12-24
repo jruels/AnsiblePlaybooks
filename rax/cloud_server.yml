@@ -1,0 +1,24 @@
+- name: Build environment
+  hosts: localhost
+  connection: local
+  gather_facts: False
+  tasks:
+    - name: Server create request
+      local_action:
+        module: rax
+        credentials: ~/.raxpub
+        name: test%04d.smithss.org
+        flavor: performance1-1
+        image: ubuntu-1310-saucy-salamander
+        disk_config: manual
+        networks:
+          - public
+          - private
+          - my-net
+        region: IAD
+        state: present
+        count: 5
+        exact_count: yes
+        group: web
+        wait: yes
+      register: rax

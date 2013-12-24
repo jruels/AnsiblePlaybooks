@@ -1,0 +1,23 @@
+---
+# gather facts about db server
+- hosts: db
+  tasks: []
+  
+- name: Install Magento, Nginx, and PHP-FPM on web servers
+  hosts: web
+  user: root
+ # sudo: yes
+
+  roles:
+    - common
+    - nginx
+    - php-fpm
+    - magento
+
+- name: Install MySQL on DB servers
+  hosts: db
+  user: root
+
+  roles:
+    - mysql
+    - common

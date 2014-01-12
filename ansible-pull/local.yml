@@ -1,0 +1,15 @@
+---
+- name: update APT cache
+  apt: update_cache=yes
+
+- name: install vim
+  apt: pkg=vim-nox state=latest
+
+- name: install pip
+  apt: pkg=python-pip state=latest
+
+- name: install boto
+  pip: name=boto state=latest
+
+- name: install AWS CLI
+  pip: name=awscli state=latest

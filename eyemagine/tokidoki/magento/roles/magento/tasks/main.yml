@@ -1,0 +1,14 @@
+---
+- name: Download Magento Downloader 
+  get_url: url=http://www.magentocommerce.com/downloads/assets/{{ mag_version }}/magento-{{ mag_version }}.tar.gz dest=/srv/magento-{{ mag_version }}.tar.gz
+
+- name: Extract Archive
+  command: chdir=/srv/ /bin/tar xvf magento-{{ mag_version }}.tar.gz creates=/srv/magento
+
+- name: Change ownership of Magento installation
+  file: path=/srv/magento/ owner=www-data group=www-data state=directory recurse=yes
+
+- name: Copy Magento local.xml config
+  template: src=local.xml.j2 dest=/srv/magento/app/etc/local.xml owner=www-data group=www-data
+
+- debug: msg="this is ansibledb1_ip value {{ mag_db_ip }}"

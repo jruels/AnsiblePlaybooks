@@ -1,0 +1,304 @@
+{
+  "_meta": {
+    "hostvars": {
+      "ec2-107-22-158-92.compute-1.amazonaws.com": {
+        "ec2__in_monitoring_element": false, 
+        "ec2_ami_launch_index": "0", 
+        "ec2_architecture": "x86_64", 
+        "ec2_client_token": "ttJzy1386454556976", 
+        "ec2_dns_name": "ec2-107-22-158-92.compute-1.amazonaws.com", 
+        "ec2_ebs_optimized": true, 
+        "ec2_eventsSet": "", 
+        "ec2_group_name": "", 
+        "ec2_hypervisor": "xen", 
+        "ec2_id": "i-3a29ca5e", 
+        "ec2_image_id": "ami-aecd60c7", 
+        "ec2_instance_profile": "", 
+        "ec2_instance_type": "m3.xlarge", 
+        "ec2_ip_address": "107.22.158.92", 
+        "ec2_item": "", 
+        "ec2_kernel": "aki-88aa75e1", 
+        "ec2_key_name": "tokidoki", 
+        "ec2_launch_time": "2013-12-16T23:40:08.000Z", 
+        "ec2_monitored": true, 
+        "ec2_monitoring": "", 
+        "ec2_monitoring_state": "enabled", 
+        "ec2_persistent": false, 
+        "ec2_platform": "", 
+        "ec2_previous_state": "", 
+        "ec2_previous_state_code": 0, 
+        "ec2_private_dns_name": "ip-10-142-140-98.ec2.internal", 
+        "ec2_private_ip_address": "10.142.140.98", 
+        "ec2_public_dns_name": "ec2-107-22-158-92.compute-1.amazonaws.com", 
+        "ec2_ramdisk": "", 
+        "ec2_reason": "", 
+        "ec2_region": "us-east-1", 
+        "ec2_requester_id": "", 
+        "ec2_root_device_name": "/dev/sda1", 
+        "ec2_root_device_type": "ebs", 
+        "ec2_security_group_ids": "sg-1892f870", 
+        "ec2_security_group_names": "tokidoki-admin", 
+        "ec2_spot_instance_request_id": "", 
+        "ec2_state": "running", 
+        "ec2_state_code": 16, 
+        "ec2_state_reason": "", 
+        "ec2_subnet_id": "", 
+        "ec2_tag_Class": "magento", 
+        "ec2_tag_Name": "shoptikiweb01", 
+        "ec2_virtualization_type": "paravirtual", 
+        "ec2_vpc_id": ""
+      }, 
+      "ec2-184-73-183-135.compute-1.amazonaws.com": {
+        "ec2__in_monitoring_element": false, 
+        "ec2_ami_launch_index": "0", 
+        "ec2_architecture": "x86_64", 
+        "ec2_client_token": "QUpBy1347900340146", 
+        "ec2_dns_name": "ec2-184-73-183-135.compute-1.amazonaws.com", 
+        "ec2_ebs_optimized": true, 
+        "ec2_eventsSet": "", 
+        "ec2_group_name": "", 
+        "ec2_hypervisor": "xen", 
+        "ec2_id": "i-62022e18", 
+        "ec2_image_id": "ami-aecd60c7", 
+        "ec2_instance_profile": "", 
+        "ec2_instance_type": "m3.2xlarge", 
+        "ec2_ip_address": "184.73.183.135", 
+        "ec2_item": "", 
+        "ec2_kernel": "aki-88aa75e1", 
+        "ec2_key_name": "tokidoki", 
+        "ec2_launch_time": "2013-12-13T09:20:20.000Z", 
+        "ec2_monitored": true, 
+        "ec2_monitoring": "", 
+        "ec2_monitoring_state": "enabled", 
+        "ec2_persistent": false, 
+        "ec2_platform": "", 
+        "ec2_previous_state": "", 
+        "ec2_previous_state_code": 0, 
+        "ec2_private_dns_name": "ip-10-238-203-190.ec2.internal", 
+        "ec2_private_ip_address": "10.238.203.190", 
+        "ec2_public_dns_name": "ec2-184-73-183-135.compute-1.amazonaws.com", 
+        "ec2_ramdisk": "", 
+        "ec2_reason": "", 
+        "ec2_region": "us-east-1", 
+        "ec2_requester_id": "", 
+        "ec2_root_device_name": "/dev/sda1", 
+        "ec2_root_device_type": "ebs", 
+        "ec2_security_group_ids": "sg-1892f870", 
+        "ec2_security_group_names": "tokidoki-admin", 
+        "ec2_spot_instance_request_id": "", 
+        "ec2_state": "running", 
+        "ec2_state_code": 16, 
+        "ec2_state_reason": "", 
+        "ec2_subnet_id": "", 
+        "ec2_tag_Name": "Poseidon - Web", 
+        "ec2_virtualization_type": "paravirtual", 
+        "ec2_vpc_id": ""
+      }, 
+      "ec2-54-227-240-32.compute-1.amazonaws.com": {
+        "ec2__in_monitoring_element": false, 
+        "ec2_ami_launch_index": "0", 
+        "ec2_architecture": "x86_64", 
+        "ec2_client_token": "JgIEy1374610664146", 
+        "ec2_dns_name": "ec2-54-227-240-32.compute-1.amazonaws.com", 
+        "ec2_ebs_optimized": false, 
+        "ec2_eventsSet": "", 
+        "ec2_group_name": "", 
+        "ec2_hypervisor": "xen", 
+        "ec2_id": "i-270a954a", 
+        "ec2_image_id": "ami-05355a6c", 
+        "ec2_instance_profile": "", 
+        "ec2_instance_type": "t1.micro", 
+        "ec2_ip_address": "54.227.240.32", 
+        "ec2_item": "", 
+        "ec2_kernel": "aki-88aa75e1", 
+        "ec2_key_name": "devkey", 
+        "ec2_launch_time": "2013-07-23T20:17:44.000Z", 
+        "ec2_monitored": false, 
+        "ec2_monitoring": "", 
+        "ec2_monitoring_state": "disabled", 
+        "ec2_persistent": false, 
+        "ec2_platform": "", 
+        "ec2_previous_state": "", 
+        "ec2_previous_state_code": 0, 
+        "ec2_private_dns_name": "ip-10-212-110-94.ec2.internal", 
+        "ec2_private_ip_address": "10.212.110.94", 
+        "ec2_public_dns_name": "ec2-54-227-240-32.compute-1.amazonaws.com", 
+        "ec2_ramdisk": "", 
+        "ec2_reason": "", 
+        "ec2_region": "us-east-1", 
+        "ec2_requester_id": "", 
+        "ec2_root_device_name": "/dev/sda1", 
+        "ec2_root_device_type": "ebs", 
+        "ec2_security_group_ids": "sg-5b78d330", 
+        "ec2_security_group_names": "dev-admin", 
+        "ec2_spot_instance_request_id": "", 
+        "ec2_state": "running", 
+        "ec2_state_code": 16, 
+        "ec2_state_reason": "", 
+        "ec2_subnet_id": "", 
+        "ec2_tag_Name": "devserver", 
+        "ec2_tag_devserver": "devserver", 
+        "ec2_virtualization_type": "paravirtual", 
+        "ec2_vpc_id": ""
+      }, 
+      "ec2-54-243-202-206.compute-1.amazonaws.com": {
+        "ec2__in_monitoring_element": false, 
+        "ec2_ami_launch_index": "0", 
+        "ec2_architecture": "x86_64", 
+        "ec2_client_token": "zhvcw1347907676930", 
+        "ec2_dns_name": "ec2-54-243-202-206.compute-1.amazonaws.com", 
+        "ec2_ebs_optimized": true, 
+        "ec2_eventsSet": "", 
+        "ec2_group_name": "", 
+        "ec2_hypervisor": "xen", 
+        "ec2_id": "i-a03817da", 
+        "ec2_image_id": "ami-aecd60c7", 
+        "ec2_instance_profile": "", 
+        "ec2_instance_type": "m3.xlarge", 
+        "ec2_ip_address": "54.243.202.206", 
+        "ec2_item": "", 
+        "ec2_kernel": "aki-88aa75e1", 
+        "ec2_key_name": "tokidoki", 
+        "ec2_launch_time": "2013-10-25T09:28:51.000Z", 
+        "ec2_monitored": false, 
+        "ec2_monitoring": "", 
+        "ec2_monitoring_state": "disabled", 
+        "ec2_persistent": false, 
+        "ec2_platform": "", 
+        "ec2_previous_state": "", 
+        "ec2_previous_state_code": 0, 
+        "ec2_private_dns_name": "ip-10-142-141-82.ec2.internal", 
+        "ec2_private_ip_address": "10.142.141.82", 
+        "ec2_public_dns_name": "ec2-54-243-202-206.compute-1.amazonaws.com", 
+        "ec2_ramdisk": "", 
+        "ec2_reason": "", 
+        "ec2_region": "us-east-1", 
+        "ec2_requester_id": "", 
+        "ec2_root_device_name": "/dev/sda1", 
+        "ec2_root_device_type": "ebs", 
+        "ec2_security_group_ids": "sg-1892f870", 
+        "ec2_security_group_names": "tokidoki-admin", 
+        "ec2_spot_instance_request_id": "", 
+        "ec2_state": "running", 
+        "ec2_state_code": 16, 
+        "ec2_state_reason": "", 
+        "ec2_subnet_id": "", 
+        "ec2_tag_Name": "Ares - Database", 
+        "ec2_virtualization_type": "paravirtual", 
+        "ec2_vpc_id": ""
+      }
+    }
+  }, 
+  "devdbserver": [
+    "devdbserver.c1fluu72cumc.us-east-1.rds.amazonaws.com"
+  ], 
+  "ec2": [
+    "ec2-54-227-240-32.compute-1.amazonaws.com", 
+    "ec2-107-22-158-92.compute-1.amazonaws.com", 
+    "ec2-184-73-183-135.compute-1.amazonaws.com", 
+    "ec2-54-243-202-206.compute-1.amazonaws.com"
+  ], 
+  "i-270a954a": [
+    "ec2-54-227-240-32.compute-1.amazonaws.com"
+  ], 
+  "i-3a29ca5e": [
+    "ec2-107-22-158-92.compute-1.amazonaws.com"
+  ], 
+  "i-62022e18": [
+    "ec2-184-73-183-135.compute-1.amazonaws.com"
+  ], 
+  "i-a03817da": [
+    "ec2-54-243-202-206.compute-1.amazonaws.com"
+  ], 
+  "key_devkey": [
+    "ec2-54-227-240-32.compute-1.amazonaws.com"
+  ], 
+  "key_tokidoki": [
+    "ec2-107-22-158-92.compute-1.amazonaws.com", 
+    "ec2-184-73-183-135.compute-1.amazonaws.com", 
+    "ec2-54-243-202-206.compute-1.amazonaws.com"
+  ], 
+  "rds": [
+    "devdbserver.c1fluu72cumc.us-east-1.rds.amazonaws.com", 
+    "tokidokidbs.c1fluu72cumc.us-east-1.rds.amazonaws.com"
+  ], 
+  "rds_mysql": [
+    "devdbserver.c1fluu72cumc.us-east-1.rds.amazonaws.com", 
+    "tokidokidbs.c1fluu72cumc.us-east-1.rds.amazonaws.com"
+  ], 
+  "rds_parameter_group_default_mysql5_5": [
+    "tokidokidbs.c1fluu72cumc.us-east-1.rds.amazonaws.com"
+  ], 
+  "rds_parameter_group_default_mysql5_6": [
+    "devdbserver.c1fluu72cumc.us-east-1.rds.amazonaws.com"
+  ], 
+  "security_group_dev-admin": [
+    "ec2-54-227-240-32.compute-1.amazonaws.com"
+  ], 
+  "security_group_devgroup": [
+    "devdbserver.c1fluu72cumc.us-east-1.rds.amazonaws.com"
+  ], 
+  "security_group_tokidoki-admin": [
+    "ec2-107-22-158-92.compute-1.amazonaws.com", 
+    "ec2-184-73-183-135.compute-1.amazonaws.com", 
+    "ec2-54-243-202-206.compute-1.amazonaws.com"
+  ], 
+  "security_group_tokidokidb": [
+    "tokidokidbs.c1fluu72cumc.us-east-1.rds.amazonaws.com"
+  ], 
+  "tag_Class_magento": [
+    "ec2-107-22-158-92.compute-1.amazonaws.com"
+  ], 
+  "tag_Name_Ares_-_Database": [
+    "ec2-54-243-202-206.compute-1.amazonaws.com"
+  ], 
+  "tag_Name_Poseidon_-_Web": [
+    "ec2-184-73-183-135.compute-1.amazonaws.com"
+  ], 
+  "tag_Name_devserver": [
+    "ec2-54-227-240-32.compute-1.amazonaws.com"
+  ], 
+  "tag_Name_shoptikiweb01": [
+    "ec2-107-22-158-92.compute-1.amazonaws.com"
+  ], 
+  "tag_devserver_devserver": [
+    "ec2-54-227-240-32.compute-1.amazonaws.com"
+  ], 
+  "tokidokidbs": [
+    "tokidokidbs.c1fluu72cumc.us-east-1.rds.amazonaws.com"
+  ], 
+  "type_db_m1_small": [
+    "tokidokidbs.c1fluu72cumc.us-east-1.rds.amazonaws.com"
+  ], 
+  "type_db_t1_micro": [
+    "devdbserver.c1fluu72cumc.us-east-1.rds.amazonaws.com"
+  ], 
+  "type_m3_2xlarge": [
+    "ec2-184-73-183-135.compute-1.amazonaws.com"
+  ], 
+  "type_m3_xlarge": [
+    "ec2-107-22-158-92.compute-1.amazonaws.com", 
+    "ec2-54-243-202-206.compute-1.amazonaws.com"
+  ], 
+  "type_t1_micro": [
+    "ec2-54-227-240-32.compute-1.amazonaws.com"
+  ], 
+  "us-east-1": [
+    "ec2-54-227-240-32.compute-1.amazonaws.com", 
+    "ec2-107-22-158-92.compute-1.amazonaws.com", 
+    "ec2-184-73-183-135.compute-1.amazonaws.com", 
+    "ec2-54-243-202-206.compute-1.amazonaws.com", 
+    "devdbserver.c1fluu72cumc.us-east-1.rds.amazonaws.com", 
+    "tokidokidbs.c1fluu72cumc.us-east-1.rds.amazonaws.com"
+  ], 
+  "us-east-1b": [
+    "ec2-107-22-158-92.compute-1.amazonaws.com", 
+    "ec2-184-73-183-135.compute-1.amazonaws.com", 
+    "ec2-54-243-202-206.compute-1.amazonaws.com", 
+    "devdbserver.c1fluu72cumc.us-east-1.rds.amazonaws.com", 
+    "tokidokidbs.c1fluu72cumc.us-east-1.rds.amazonaws.com"
+  ], 
+  "us-east-1c": [
+    "ec2-54-227-240-32.compute-1.amazonaws.com"
+  ]
+}

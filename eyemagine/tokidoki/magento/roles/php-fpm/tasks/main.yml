@@ -1,0 +1,29 @@
+---
+- name: Install php-fpm and deps 
+  apt: name={{ item }} state=present
+  with_items:
+    - php5
+    - php5-fpm
+    - php5-enchant
+    - php5-idn
+    - php5-mysqlnd
+    - libphp-phpmailer
+    - libphp-simplepie
+    - php5-xmlrpc
+    - php5-mcrypt
+    - php5-gd
+    - php5-cli
+    - php5-json
+
+- name: Disable default pool
+  command: mv /etc/php5/fpm/pool.d/www.conf /etc/php5/fpm/pool.d/www.disabled creates=/etc/php5/fpm/pool.d/www.disabled
+ 
+- name: Copy php-fpm configuration
+  template: src=magento.conf dest=/etc/php5/fpm/pool.d/
+
+- name: Copy mcrypt.ini to correct location
+  template: src=mcrypt.ini dest=/etc/php5/mods-available/
+
+- name: Fix php-fpm for Ubuntu 13.10
+  command: php5enmod mcrypt
+  notify: restart php-fpm

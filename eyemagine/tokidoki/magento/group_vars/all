@@ -1,0 +1,23 @@
+---
+# Which version of Magento to deploy
+mag_version: 1.8.0.0
+
+# These are the Magento database settings
+mag_db_name: magento 
+mag_db_user: magento
+mag_db_password: Sento9767$
+
+# You shouldn't need to change this.
+mysql_port: 3306
+
+# This is used for the nginx server configuration, but # access to the
+# Magento site is not restricted by a # named host.
+server_hostname: localhost
+
+#db_ip
+mag_db_ip: "{{ hostvars['ansibledb1'].ansible_eth0.ipv4.address }}"
+
+#app server's IP
+#mag_app_ip: "{{ hostvars['ansibleweb1']['ansible_' + iface].ipv4.address }}" # another way to pull IP
+mag_app_ip: "{{ hostvars['ansibleweb1'].ansible_eth0.ipv4.address }}"
+

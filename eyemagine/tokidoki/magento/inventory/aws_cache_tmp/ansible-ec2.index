@@ -1,0 +1,26 @@
+{
+  "devdbserver.c1fluu72cumc.us-east-1.rds.amazonaws.com": [
+    "us-east-1", 
+    "devdbserver"
+  ], 
+  "ec2-107-22-158-92.compute-1.amazonaws.com": [
+    "us-east-1", 
+    "i-3a29ca5e"
+  ], 
+  "ec2-184-73-183-135.compute-1.amazonaws.com": [
+    "us-east-1", 
+    "i-62022e18"
+  ], 
+  "ec2-54-227-240-32.compute-1.amazonaws.com": [
+    "us-east-1", 
+    "i-270a954a"
+  ], 
+  "ec2-54-243-202-206.compute-1.amazonaws.com": [
+    "us-east-1", 
+    "i-a03817da"
+  ], 
+  "tokidokidbs.c1fluu72cumc.us-east-1.rds.amazonaws.com": [
+    "us-east-1", 
+    "tokidokidbs"
+  ]
+}

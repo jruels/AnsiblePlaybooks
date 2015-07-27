@@ -1,11 +1,13 @@
 ---
 - name: Install Magento, MySQL, Nginx, and PHP-FPM
   hosts: all
-  user: root
+  user: centos
+  sudo: yes
 
   roles:
     - common
-    - mysql 
+    - mysql
     - nginx
     - php-fpm
     - magento
+    - selinux

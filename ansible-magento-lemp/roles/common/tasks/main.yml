@@ -2,6 +2,9 @@
 - name: Install EPEL RPM
   yum:  name=epel-release state=latest
 
+- name: Fix EPEL SSL Error
+  command: yum upgrade -y ca-certificates --disablerepo=epel
+
 - name: Set up iptables rules
   copy: src=iptables-save dest=/etc/sysconfig/iptables
   notify: restart iptables

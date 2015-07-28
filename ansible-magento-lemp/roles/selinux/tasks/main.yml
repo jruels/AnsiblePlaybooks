@@ -1,19 +1,26 @@
 ---
-- name: Install Mysql package
+- name: Install SELinux Ansible package
   yum: name={{ item }} state=present
   with_items:
-   - mysql-server
-   - MySQL-python
-   - libselinux-python
-   - libsemanage-python
+  - libselinux-python
+  - libsemanage-python
 
-#- name: Configure SELinux to start mysql on any port
-#  seboolean: name=mysql_connect_any state=true persistent=yes
+- name: Enable SELinux
+  selinux: policy=targeted state=enforcing
 
-- name: Create Mysql configuration file
-  template: src=my.cnf.j2 dest=/etc/my.cnf
-  notify: 
-  - restart mysql
+- name: Reboot
+  shell: sleep 2 && shutdown -r now "Ansible updates triggered"
+  async: 1
+  poll: 0
+  ignore_errors: true
 
-- name: Start Mysql Service
-  service: name=mysqld state=started enabled=true
+- name: Wait for server to restart
+  local_action:
+    module: wait_for
+      host={{ inventory_hostname }}
+      delay=1
+      timeout=10
+
+
+- name: Configure SELinux to start mysql on any port
+  seboolean: name=mysql_connect_any state=true persistent=yes

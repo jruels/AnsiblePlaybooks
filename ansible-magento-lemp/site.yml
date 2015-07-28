@@ -7,3 +7,7 @@
   roles:
     - common
     - selinux
+    - mysql
+    - nginx
+    - php-fpm
+    - magento
